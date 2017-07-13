@@ -20,7 +20,8 @@ class Marker extends Component {
 	}
 
 	addEvents() {
-		this.marker.addListener('click', (e) => this.infoWindow.open(this.props.map, this.marker));
+		this.marker.addListener('mouseover', (e) => this.infoWindow.open(this.props.map, this.marker));
+		this.marker.addListener('mouseout', (e) => this.infoWindow.close(this.props.map, this.marker));
 	}
 
 	renderInfoWindow() {

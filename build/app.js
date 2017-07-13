@@ -100,8 +100,11 @@
 			value: function addEvents() {
 				var _this2 = this;
 	
-				this.marker.addListener('click', function (e) {
+				this.marker.addListener('mouseover', function (e) {
 					return _this2.infoWindow.open(_this2.props.map, _this2.marker);
+				});
+				this.marker.addListener('mouseout', function (e) {
+					return _this2.infoWindow.close(_this2.props.map, _this2.marker);
 				});
 			}
 		}, {
