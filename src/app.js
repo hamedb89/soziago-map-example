@@ -1,6 +1,5 @@
 import {h, render, Component, cloneElement} from 'preact';
 import gm from 'google-maps';
-import _ from 'lodash';
 
 const params = {v: '3.exp', key: 'AIzaSyDMXTa0RywA0ZfrwilGGIlR1Qx0aRc98CQ'};
 
